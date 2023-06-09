@@ -1,3 +1,12 @@
 <header>
-    <h6>Sono l'Header</h6>
+    <nav>
+        <ul>
+            <li>
+                <a href="{{ route('home') }}">Home</a>
+            </li>
+            <li>
+                <a href="{{ route('movies') }}">Movies</a>
+            </li>
+        </ul>
+    </nav>
 </header>
