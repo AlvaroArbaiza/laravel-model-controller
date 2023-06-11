@@ -1,0 +1,30 @@
+main {
+    width: 100%;
+
+    .container {
+        @include widthMargin(80%, 50px);
+        gap: 2.6rem;
+
+        // card
+        .card {
+            flex-basis: calc(100% / 4 - 2rem);
+            filter: drop-shadow(2px 4px 6px rgb(255, 0, 0));        
+        }
+
+        // cardbody
+        .card-body {
+            position: relative;
+            padding: 1.5rem 1rem 0.5rem;
+            
+            h5 {
+                font-size: 1rem;
+            }
+            h6 {
+                font-size: 0.9rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

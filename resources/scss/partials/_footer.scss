@@ -1,0 +1,9 @@
+// footer
+footer {
+    width: 100%;
+    
+    .container {
+        @include widthMargin(80%, 0);
+
+    }
+}

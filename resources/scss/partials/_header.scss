@@ -1,0 +1,12 @@
+// header
+header {
+    width: 100%;
+    background-color: #f8f9fa;
+
+    .container {
+        @include widthMargin(80%, 0);
+        @include center('vertical');
+        justify-content: space-between;
+
+    }
+}
