@@ -15,10 +15,3 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ HomeController::class, 'index' ] )->name('home');
-
-Route::get('/movies', function () {
-
-    $title = 'Pagina Movies';
-
-    return view('pages.movies', compact('title'));
-})->name('movies');

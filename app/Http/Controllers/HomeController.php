@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\Movie;
 
 class HomeController extends Controller
 {
@@ -10,6 +12,8 @@ class HomeController extends Controller
         
         $title = 'Pagina Home';
 
-        return view('pages.home', compact('title'));
+        $movies = Movie::All();
+
+        return view('pages.home', compact('title', 'movies'));
     }
 }
